@@ -1,6 +1,10 @@
 # EARec
 This is the official implementation for *Explainable Multi-Modality Alignment for
-Transferable Recommendation*.
+Transferable Recommendation* [paper](blob/The_WebConf_2025_.pdf).
+
+> Shenghao Yang, Weizhi Ma, Zhiqiang Guo, Min Zhang, Haiyang Wu, Junjie Zhai, Chunhui Zhang, Yuekui Yang. Explainable Multi-Modality Alignment for Transferable Recommendation. TheWebConf 2024.
+
+---
 
 <div align=center>
 <img src="Figure/EARec.png" alt="EARec" width="100%" />
