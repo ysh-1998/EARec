@@ -29,9 +29,9 @@ To repreduce our experiment results of ```Office``` dataset, you should follow t
 ```
 git clone https://github.com/ysh-1998/EARec.git
 ```
-We provide a preprocessed dataset of ```Office``` dataset in ```dataset/Office```. The images of ```Office``` dataet should be download from [Google Drive](https://drive.google.com/file/d/15_x51-hrKeHpFW4BBfTP2p3OhZXJUHyO/view?usp=drive_link) and place in ```dataset/Office/image```. 
+We provide a preprocessed dataset of ```Office``` dataset in ```dataset/Office```. The images of ```Office``` dataet should be download from [Google Drive](https://drive.google.com/file/d/1r2-s-iXU97-MuUdETM-t5m_R88064u5J/view?usp=drive_link) and place in ```dataset/Office/image```. 
 
-2.Download the finetuned LoRA weights of three modalities from [Google Drive](https://drive.google.com/file/d/1KC2EhiFXh-2CY14sIqdwOYb1aN3zVhVi/view?usp=drive_link) and place them in ```checkpoints```. To reproduce the alignment training process, you can refer to the scripts in ```scripts/v1_5```.
+2.Download the finetuned LoRA weights of three modalities from [Google Drive](https://drive.google.com/file/d/13ybxzRQwVa99TkGfEaS4sqijAz02-EzJ/view?usp=drive_link) and place them in ```checkpoints```. To reproduce the alignment training process, you can refer to the scripts in ```scripts/v1_5```.
 
 3.Merge the LoRA weights of three modalities.
 ```
