@@ -27,7 +27,7 @@ To repreduce our experiment results of ```Office``` dataset, you should follow t
 
 1.Git clone this repository.
 ```
-git clone https://anonymous.4open.science/r/EARec
+git clone https://github.com/ysh-1998/EARec.git
 ```
 We provide a preprocessed dataset of ```Office``` dataset in ```dataset/Office```. The images of ```Office``` dataet should be download from [Google Drive](https://drive.google.com/file/d/15_x51-hrKeHpFW4BBfTP2p3OhZXJUHyO/view?usp=drive_link) and place in ```dataset/Office/image```. 
 
