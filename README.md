@@ -1,5 +1,5 @@
 # EARec
-This is the official implementation for *Explainable Generative Multi-Modality Alignment for
+This is the official implementation for *Explainable Multi-Modality Alignment for
 Transferable Recommendation*.
 
 <div align=center>
