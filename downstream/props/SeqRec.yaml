@@ -16,3 +16,4 @@ lambda: 1e-3
 plm_suffix: featEARec.tvb
 plm_size: 4096
 adaptor_layers: [4096,300]
+temperature: 0.07
