@@ -13,8 +13,6 @@ from mllm.mm_utils import tokenizer_image_token, process_images, get_model_name_
 
 from PIL import Image
 import math
-from rouge_score import rouge_scorer
-scorer = rouge_scorer.RougeScorer(['rougeL'], use_stemmer=True)
 
 
 def split_list(lst, n):
@@ -94,7 +92,7 @@ def eval_model(args):
         if args.pooling == "last-avg":
             embedding = torch.mean(outputs.hidden_states[-1][0,:,:], dim=0).unsqueeze(0).detach().cpu()#.float()
             embedding_list.append(embedding)
-    embeddings = torch.cat(embedding_list, dim=0).numpy()
+    embeddings = torch.cat(embedding_list, dim=0).numpy().astype('float32')
     print('Embeddings shape: ', embeddings.shape)
     file = os.path.join(answers_file)
     embeddings.tofile(file)

@@ -8,7 +8,6 @@ class SeqRec(SASRec):
     def __init__(self, config, dataset):
         super().__init__(config, dataset)
         
-        self.temperature = config['temperature']
         self.item_embedding = None
         self.plm_embedding = copy.deepcopy(dataset.plm_embedding)
         self.adaptor = nn.Linear(config['adaptor_layers'][0], config['adaptor_layers'][1])
@@ -40,7 +39,7 @@ class SeqRec(SASRec):
         seq_output = F.normalize(seq_output, dim=1)
         test_item_emb = F.normalize(test_item_emb, dim=1)
 
-        logits = torch.matmul(seq_output, test_item_emb.transpose(0, 1)) / self.temperature
+        logits = torch.matmul(seq_output, test_item_emb.transpose(0, 1))
         pos_items = interaction[self.POS_ITEM_ID]
         loss = self.loss_fct(logits, pos_items)
         return loss
