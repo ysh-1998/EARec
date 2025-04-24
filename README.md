@@ -41,7 +41,7 @@ We implement downstream recommendation beased on [RecBole](https://github.com/RU
 ``` bash
 conda create -n rec python==3.9
 conda activate rec
-pip install recbole==1.0.1
+pip install numpy==1.21.3 pandas==1.3.5 recbole==1.0.1
 ```
 Then run the following command.
 ``` bash
