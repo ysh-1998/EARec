@@ -33,7 +33,7 @@ bash scripts/v1_5/eval/eval_emb.sh
 ```
 You can also get the multi-modal item embedding with mulitple GPUs using following command.
 ```
-bash scripts/v1_5/eval/eval_emb_dp.sh
+CUDA_VISIBLE_DEVICES=0,1,2,3 bash scripts/v1_5/eval/eval_emb_dp.sh
 ```
 6.Train and evaluate downstream recommendation model with aligned multi-modal item embedding.
 ```
